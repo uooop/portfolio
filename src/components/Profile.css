@@ -1,0 +1,23 @@
+.profile {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+.profile > div {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.section {
+  position: sticky;
+  height: 93vh; /* 헤더 높이를 고려하여 조정 */
+  width: 100%;
+  top: 8vh; /* 헤더 높이와 일치 */
+}

@@ -1,0 +1,152 @@
+/* Header.css */
+.header-wrapper {
+  background-color: #3254dc;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.initial-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3254dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.initial-screen.hide {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.initial-screen.hide .center-logo {
+  transform: translateY(-50px);
+}
+
+.center-logo {
+  height: 100px; /* 초기 로고 크기, 필요에 따라 조정 */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.logo {
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.header-helloi {
+  position: absolute;
+  top: 40%; /* 조정 가능 */
+  left: 50%; /* 조정 가능 */
+  transform: translate(-50%, -50%); /* 중앙 정렬 */
+  /* 필요에 따라 크기 조정 */
+  width: auto;
+  height: auto;
+  max-width: 75%; /* 필요에 따라 조정 */
+  max-height: 50%; /* 필요에 따라 조정 */
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.header-helloi.visible {
+  opacity: 1;
+}
+
+.header-helloi.hidden {
+  opacity: 0;
+}
+
+.header-main {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+
+.header-content.show {
+  opacity: 1;
+}
+
+.header-text-center {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-text-right {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  right: 20px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 200px;
+  height: 100%;
+  background-color: #bdcae5;
+  color: #3254dc;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu .close-btn {
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.side-menu ul {
+  margin-top: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin: 30px 0;
+}
+
+.side-menu ul li a {
+  color: #3254dc;
+  text-decoration: none;
+}
+
+.side-menu ul li a:hover {
+  background-color: #e1eaff;
+}
