@@ -1,8 +1,15 @@
-/* Header.css */
+@font-face {
+  font-family: "ONE-Mobile-Title";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header-wrapper {
   background-color: #3254dc;
   width: 100%;
-  height: 100px;
+  height: 10vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,12 +89,6 @@
   opacity: 0;
 }
 
-.header-main {
-  width: 100%;
-  position: absolute;
-  top: 0%;
-}
-
 .header-content.show {
   opacity: 1;
 }
@@ -108,6 +109,7 @@
 }
 
 .side-menu {
+  font-family: "ONE-Mobile-Title";
   position: fixed;
   top: 0;
   left: -300px;
@@ -120,6 +122,11 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.side-menu > .logo {
+  margin: 2px auto 0;
+  display: block;
 }
 
 .side-menu.open {

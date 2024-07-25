@@ -1,0 +1,40 @@
+.footer {
+    position: absolute;
+    width: 150vh;
+    height: 65vh;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin-top: 5vh;
+    color: #3254dc;
+}
+
+.footer-thx {
+    margin: 0;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.footer-contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-head {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.footer-head1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer-content {
+    margin: 0;
+    padding-bottom: 10px;
+}

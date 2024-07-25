@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.aboutme {
+  left: 43.8vh;
+}
+
+.aboutme-container {
+  position: absolute;
+  width: 100vh;
+  height: 70vh;
+  background-color: white;
+  top: 45%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #3254dc;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.aboutme-dot {
+  position: absolute;
+  margin: 0;
+  padding: 12px;
+  color: #3254dc;
+}
+
+.aboutme-personalinfo {
+  margin: 3vh 3vh 0 4vh;
+}
+
+.aboutme-name {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  margin: 0;
+  font-size: 50px;
+  display: flex;
+  height: 100px;
+  color: #3254dc;
+}
+
+.aboutme-lastname {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  align-items: center;
+  display: grid;
+  color: #3254dc;
+}
+
+.aboutme-content {
+  margin: 0;
+  color: #3254dc;
+  line-height: 2;
+}
+
+.aboutme-intro {
+  margin: 1vh 2vh 0 2vh;
+}
+
+.aboutme-hr2 {
+  margin: 0;
+  width: 100%;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #3254dc;
+  height: 1px;
+}
+
+.aboutme-introduction {
+  padding-top: 5vh;
+  color: #3254dc;
+  line-height: 2;
+}

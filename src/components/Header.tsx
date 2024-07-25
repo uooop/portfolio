@@ -8,6 +8,7 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
+  { href: "#home", label: "HOME" },
   { href: "#aboutme", label: "About Me" },
   { href: "#skills", label: "Skill" },
   { href: "#projects", label: "Projects" },
@@ -22,6 +23,15 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const scrollToSection = (event: React.MouseEvent<HTMLElement>, sectionId: string) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId.substring(1));
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    } 
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -56,7 +66,7 @@ const Header: React.FC = () => {
         <ul>
           {menuItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href}>{item.label}</a>
+              <a href={item.href} onClick={(e) => scrollToSection(e, item.href)}>{item.label}</a>
             </li>
           ))}
         </ul>

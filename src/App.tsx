@@ -1,15 +1,22 @@
-import React from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
-const App: React.FC = () => {
+
+function App() {
+  const [, setCurrentSection] = useState('');
+
+  const onSectionChange = (sectionId: string) => {
+    setCurrentSection(sectionId);
+    // 여기에 필요한 추가 로직을 구현할 수 있습니다.
+    console.log('Current section:', sectionId);
+  };
+  
   return (
     <div>
       <Header />
-      <Profile onSectionChange={function (): void {
-        throw new Error("Function not implemented.");
-      } } />
+      <Profile onSectionChange={onSectionChange} />
     </div>
   );
-};
+}
 
 export default App;

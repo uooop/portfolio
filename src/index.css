@@ -6,9 +6,6 @@
   font-style: normal;
 }
 
-:root {
-}
-
 html,
 body {
   width: 100%;
@@ -16,6 +13,7 @@ body {
   margin: 0;
   overflow: auto;
   font-family: "S-CoreDream-3Light";
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
@@ -29,6 +27,12 @@ body {
 
 #root {
   width: 100%;
-  min-height: 1080px;
   background-color: #3254dc;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+button {
+  font-family: "S-CoreDream-3Light";
 }

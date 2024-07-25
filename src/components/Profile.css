@@ -1,23 +1,101 @@
+@font-face {
+  font-family: "ONE-Mobile-Title";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .profile {
+  position: relative;
   height: 100vh;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scroll-behavior: smooth;
+}
+
+.header-main {
+  width: 100%;
+}
+
+.header-main-container {
+  height: 100vh;
 }
 
 .profile::-webkit-scrollbar {
-    display: none;
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .profile > div {
-    scroll-snap-align: start;
-    height: 100vh;
+  scroll-snap-align: start;
 }
 
 .section {
   position: sticky;
-  height: 93vh; /* 헤더 높이를 고려하여 조정 */
+  top: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  z-index: 1; /* z-index를 높여서 다른 요소 위로 나오게 설정 */
+}
+
+.section-container {
+  height: 100vh !important;
+  z-index: 2; /* z-index를 높여서 다른 요소 위로 나오게 설정 */
+  position: relative; /* z-index가 작동하도록 position을 relative로 설정 */
+}
+
+.section2,
+.section3,
+.section4,
+.section5 {
+  margin-top: -14vh;
+}
+
+.container-content {
+  position: absolute;
+  width: 100vh;
+  height: 70vh;
+  background-color: white;
+  top: 45%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #3254dc;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.headline {
+  font-family: "ONE-Mobile-Title";
+  margin: 0;
+  color: #3254dc;
+  position: absolute;
+  top: 0.8vh;
+  font-size: 25px;
+}
+
+.domain {
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  color: #3254dc;
+  font-weight: 900;
+}
+
+.hr1 {
+  margin: 0;
   width: 100%;
-  top: 8vh; /* 헤더 높이와 일치 */
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #3254dc;
+  height: 1px;
 }

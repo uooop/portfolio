@@ -1,0 +1,41 @@
+.skills {
+    left: 76.8vh;
+}
+
+.skills-skilltool {
+    margin: 8vh 10vh 5vh 10vh;
+}
+
+.skills-name {
+    margin: 0;
+    color: #3254dc;
+    margin-bottom: 5vh;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.skills-frontend,
+.skills-design {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px; /* 아이템 사이의 간격 */
+  margin-bottom: 5vh;
+}
+
+.frontend-item,
+.design-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.frontend-icon,
+.design-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
