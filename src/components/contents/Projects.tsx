@@ -71,7 +71,7 @@ export default function Projects() {
     {
       image: "project_thumbnail1.png",
       title: "CONVERSE CHUCK 70",
-      description: "",
+      description: "컨버스 척70을 알리는 프로모션 사이트 디자인입니다.",
       keywords: ["5 Week", "개인", "디자인"],
       pageUrl: "",
       gitHubUrl: "",
@@ -79,7 +79,7 @@ export default function Projects() {
     {
       image: "project_thumbnail2.png",
       title: " Mesozoic Eden",
-      description: "",
+      description: "공룡 공원 소개 페이지입니다.",
       keywords: ["2 Week", "팀", "웹사이트"],
       pageUrl: "",
       gitHubUrl: "https://github.com/uooop/mesozoiceden",
@@ -87,10 +87,18 @@ export default function Projects() {
     {
       image: "project_thumbnail3.png",
       title: "Céleste",
-      description: "",
+      description: "본인의 피부/두피 타입을 확인하고 그에 맞는 제품을 살 수 있는 사이트입니다.",
       keywords: ["5 Week", "팀", "웹사이트"],
       pageUrl: "https://shoppingfront.onrender.com",
       gitHubUrl: "https://github.com/kmw0428/shop-front",
+    },
+    {
+      image: "project_thumbnail4.png",
+      title: "Portfolio",
+      description: "저만의 포트폴리오를 만들기 위해 제작했습니다.",
+      keywords: ["1 Week", "개인", "웹사이트"],
+      pageUrl: "https://jh-portfolio.onrender.com/",
+      gitHubUrl: "https://github.com/uooop/portfolio",
     },
     // 더 많은 프로젝트를 추가할 수 있습니다
   ];

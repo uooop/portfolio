@@ -11,7 +11,7 @@
   width: 150vh;
   height: 70vh;
   top: 45%;
-  left: 50%;
+  left: 43%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -19,12 +19,13 @@
 }
 
 .project-card {
+  height: 400px;
   background-color: #f5f5f5;
-  border: 1px solid  #3254dc;
+  border: 1px solid #3254dc;
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
-  width: calc(33.333% - 20px); /* 3개의 카드를 한 줄에 배치 */
+  width: calc(30% - 20px); /* 3개의 카드를 한 줄에 배치 */
   position: relative;
   transition: transform 0.3s ease;
   z-index: 1; /* z-index를 작동시키기 위해 position을 relative로 설정 */
@@ -36,11 +37,12 @@
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 55%;
 }
 
 .project-info {
   padding: 15px;
+  height: 50%;
 }
 
 .project-tille {
@@ -49,12 +51,15 @@
 }
 
 .project-description {
-  font-size: 1em;
+  font-size: 14px;
   color: #666;
+  margin: 0 20px;
 }
 
 .project-keywords {
-  margin-left: 20px;
+  margin: 0 20px 15px 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 .project-keyword {
@@ -64,7 +69,6 @@
   border-radius: 5px;
   margin-right: 5px;
   display: inline-block;
-  gap: 20px;
   font-size: 12px;
 }
 
@@ -101,7 +105,7 @@
 .github-button {
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  border: 1px solid #bdcae5;;
+  border: 1px solid #bdcae5;
   padding: 10px 20px;
   margin: 10px;
   border-radius: 5px;
